@@ -1,12 +1,8 @@
-numbers = list(map(int, input().split()))
+words = input().lower()
+vowel = ['a','e','i','o','u']
 
-
-positive_sum = 0
-
-
-for num in numbers:
-    if num <= 0:
-        continue  
-    positive_sum += num
-
-print(positive_sum)
+for word in words:
+    if word == vowel:
+        continue
+    
+print(word)
